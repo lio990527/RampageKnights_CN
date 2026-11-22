@@ -16,31 +16,6 @@
 双击 uninstall.bat，会用本包 _original 里的官方原版文件覆盖回去。
 不需要重新下载游戏。也可以直接 Steam 校验文件完整性。
 
-本版修复
---------
-v1.1 修复了 v1.0 的致命问题：标题字体图集用了 4096x2048，超出引擎
-单边 2048 像素的硬上限，导致 orgy 字体加载失败。
-表现是：NPC 名字、对话标题、鼠标悬停提示（tip）、帽子名、成就名、
-HUD 数字全部不显示，并且因为每帧重试加载纹理而严重掉帧。
-现在标题图集改为 2048x2048，字号在引擎允许范围内取到最大。
-
-文件清单
---------
-data/text.txt.bin                     文本库（1342 条译文）
-data/font/komika.fnt / .png           羊皮纸黑字
-data/font/komika_white.fnt / .png     正文、对话、菜单
-data/font/orgy2.fnt / .png            标题、提示、HUD、成就
-data/ui/camp_menu.png                 挑战面板 + 营地横幅
-data/ui/camp_menu2.png                营地菜单五条卷轴
-data/ui/cards.png                     挑战卡牌名
-data/ui/surgery_cloth.png             手术布
-data/ui/intro/intro_text.png          片头字幕
-scripts/entities/GameOver.nut.bin
-scripts/hud/HUD_ingame_menu.nut.bin
-scripts/menu/MainMenu.nut.bin
-scripts/menu/LobbySubMenu.nut.bin
-scripts/menu/PagedSubMenu.nut.bin
-
 常见问题
 --------
 Q: 文字全空白
